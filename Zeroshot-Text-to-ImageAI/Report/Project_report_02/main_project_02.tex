@@ -1,0 +1,142 @@
+\documentclass{exam}
+\usepackage[fontsize=12pt]{scrextend}
+\usepackage{xpatch}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{lscape} % For landscape table
+\usepackage{array}
+\usepackage{hyperref} % For hyperlinks
+\usepackage{geometry}
+\usepackage{adjustbox}
+
+\pointsdroppedatright
+\marksnotpoints
+\makeatletter
+\def\mydroppoints{%
+  {\unskip\nobreak\hfil\penalty50
+    \hskip2em\hbox{}\nobreak\hfil
+    (\@points~mark\expandafter\ifx\@points1\else s\fi)
+    \parfillskip=0pt \finalhyphendemerits=0 \par}
+}
+\makeatother
+
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=25mm,
+  bottom=25mm,
+  heightrounded,
+}
+
+\begin{document}
+
+\begin{center}
+\textbf{CS550/DSL501: Machine Learning (2024--25--M)} \\
+\textbf{Project-II: Zero-Shot Text-to-Image Generation Using TurboSD and Text Ensembling} \\
+\textbf{Progress Report}
+\end{center}
+
+\vspace{0.2in}
+
+\section{Project Title}
+Zero-Shot Text-to-Image Generation Using TurboSD and Text Ensembling
+
+\section{Group Name}
+Zeroshot Dreamers
+
+\vspace{0.2in}
+
+\section{Contributors}
+\begin{itemize}
+    \item \textbf{Nitin Mane (M24MT004)} - Project Lead
+    \item \textbf{Himanshu Rana (12240700)} - Data Processing and Feature Engineering
+    \item \textbf{Deepak Kumar (12240510)} - Feature Transformation
+    \item \textbf{Mahesh Kesgire (M24MT001)} - Model Pipeline Development
+    \item \textbf{Mohd abdul Mukheet (M24MT002)} - Model Integration and Inference
+\end{itemize}
+
+\vspace{0.2in}
+
+\section{Progress Summary}
+
+\subsection{Nitin Mane (Project Lead)}
+\textbf{Contribution}: \\
+Nitin has coordinated the project phases, ensuring alignment between data collection, preprocessing, model development, and inference. He has structured the GitHub repository and facilitated the ongoing integration of various modules. The project is currently halfway complete, and further steps are being planned for fine-tuning and final model adjustments.
+
+\textbf{Current Progress}: 
+\begin{itemize}
+    \item Organized and managed the GitHub repository.
+    \item Coordinated team meetings and set deadlines for different components.
+    \item Collaborated with Mahesh to prepare for the integration of the LoRA-based fine-tuning process into Stable Diffusion.
+\end{itemize}
+
+\vspace{0.2in}
+
+\subsection{Himanshu Rana (Data Processing and Feature Engineering)}
+\textbf{Contribution}: \\
+Himanshu has made significant progress in data collection and preprocessing. He has successfully completed the initial dataset loading and text preprocessing. His work is 50\% completed, and he will proceed with further data augmentation and optimization in the next phase.
+
+\textbf{Current Progress}: 
+\begin{itemize}
+    \item Loaded image-text pairs from Hugging Face (LAION-400M).
+    \item Processed textual descriptions using the CLIPTokenizer for initial feature extraction.
+    \item Next phase will involve more comprehensive data augmentation and final optimizations.
+\end{itemize}
+
+\vspace{0.2in}
+
+\subsection{Deepak Kumar (Feature Transformation)}
+\textbf{Contribution}: \\
+Deepak has made progress in transforming the text and image data into feature embeddings. He is currently at 50\% completion, with feature extraction using CLIP successfully implemented. In the next phase, he will refine the transformation process and ensure optimal alignment between text and image embeddings.
+
+\textbf{Current Progress}: 
+\begin{itemize}
+    \item Implemented CLIP-based text and image feature extraction.
+    \item Collaborated with Himanshu to ensure the proper format of feature vectors.
+    \item Will refine feature alignment and optimization in the next phase.
+\end{itemize}
+
+\vspace{0.2in}
+
+\subsection{Mahesh Kesgire (Model Pipeline Development)}
+\textbf{Contribution}: \\
+Mahesh has been working on setting up the model pipeline using Stable Diffusion with LoRA integration. While the base model architecture is ready, the next phase will focus on fine-tuning the model, applying text-ensembling techniques, and incorporating diffusion regularization methods. The model pipeline is approximately 50\% complete.
+
+\textbf{Current Progress}: 
+\begin{itemize}
+    \item Set up the basic Stable Diffusion model with LoRA integration.
+    \item Implemented preliminary text ensembling techniques.
+    \item Next steps include fine-tuning, diffusion style regularization, and content regularization.
+\end{itemize}
+
+\vspace{0.2in}
+
+\subsection{Mohd Mukheet (Model Integration and Inference)}
+\textbf{Contribution}: \\
+Mohd has partially integrated the model and set up initial inference tests. The current focus is on running test cases with preliminary results, which show promise but require further refinement. In the next phase, he will focus on completing the inference pipeline and optimizing the output for quality.
+
+\textbf{Current Progress}: 
+\begin{itemize}
+    \item Integrated early versions of the model and ran initial inference tests.
+    \item Preliminary visualizations are completed but require further adjustments.
+    \item Will finalize the inference and output evaluation in the next phase.
+\end{itemize}
+
+\vspace{0.2in}
+
+\section{Next Steps}
+\begin{enumerate}
+    \item Complete the integration of the TurboSD model with LoRA fine-tuning and text ensembling techniques.
+    \item Fine-tune the model and apply advanced diffusion regularization methods to improve image quality.
+    \item Perform detailed testing and evaluation using quantitative and qualitative metrics such as Fréchet Inception Distance (FID) and human evaluations.
+    \item Prepare the final report and presentation summarizing the project results and future directions.
+\end{enumerate}
+
+\vspace{0.2in}
+
+\section{GitHub Repository}
+For detailed code implementation and version control, please refer to the project's GitHub repository: \\
+\url{https://github.com/Nitin-Mane/Zeroshot-Text-to-ImageAI}
+
+\end{document}
