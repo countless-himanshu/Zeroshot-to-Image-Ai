@@ -28,7 +28,7 @@ Generating images from textual descriptions is a complex challenge due to the di
 
 The ZeroShot Text-to-Image Generator project aims to overcome these issues by employing zero-shot learning techniques. These techniques allow the model to generalize to unseen categories by understanding latent relationships between text and images. By leveraging a combination of transformer models for text encoding and GANs for image generation, the model can produce realistic visuals from a wide range of descriptive prompts without requiring direct examples during training.
 
-&
+
 ## Motivation
 
 The primary motivation for developing the ZeroShot Text-to-Image Generator is to advance generative modeling capabilities and bridge the gap between text and image representations. Traditional image generation methods depend heavily on labeled datasets, which can be costly and time-consuming to collect. Zero-shot learning eliminates this dependence, offering a more scalable solution to generating novel visual content.
@@ -44,7 +44,6 @@ The Jupyter notebook is designed to help users understand the practical aspects 
 
 A real-time prototype of the ZeroShot Text-to-Image Generator has been deployed to showcase its capabilities in generating images based on user-provided prompts. Users can interact with the model and test its performance in real-time by visiting our Hugging Face Space. Please refer to [Hugging Face link](#) for further details and to try out the model directly.
 
-&nbsp;
 
 ## Features
 - Zero-Shot Learning Capabilities: The model can generate images from text prompts without requiring explicit labeled examples during training.
